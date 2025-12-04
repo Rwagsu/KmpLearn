@@ -38,6 +38,7 @@ import kmplearn.composeapp.generated.resources.compose_multiplatform
                 ) {
                     Image(painterResource(Res.drawable.compose_multiplatform), null)
                     Text("Compose: $greeting")
+                    Text(text = "")
                 }
             }
         }
