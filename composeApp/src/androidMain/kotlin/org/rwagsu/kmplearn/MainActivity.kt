@@ -14,11 +14,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            App()
+            App(battery = Btyc(applicationContext))
         }
     }
 }
 
 @Preview @Composable fun AppAndroidPreview() {
-    App()
+    App(battery = Btyc(null))
 }

@@ -19,7 +19,9 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import kmplearn.composeapp.generated.resources.Res
 import kmplearn.composeapp.generated.resources.compose_multiplatform
 
-@Composable @Preview fun App() {
+@Composable @Preview fun App(
+    battery : Btyc
+) {
     MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
         Column(
@@ -38,7 +40,7 @@ import kmplearn.composeapp.generated.resources.compose_multiplatform
                 ) {
                     Image(painterResource(Res.drawable.compose_multiplatform), null)
                     Text("Compose: $greeting")
-                    Text(text = "")
+                    Text(text = "Battery: ${battery.GetBty()}")
                 }
             }
         }

@@ -7,8 +7,4 @@ class Greeting {
     fun greet() : String {
         return "Hello, ${platform.name}!"
     }
-    
-    fun Bty() : Int {
-        return 0
-    }
 }
